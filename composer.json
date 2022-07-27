@@ -12,7 +12,7 @@
 	"typo3-ter/theme_bootstrap": "self.version"
 },
 "require": {
-	"typo3-ter/dyncss_less": "^0.7",
+  "kaystrobach/dyncss-less": "dev-master",
 	"typo3-themes/themes-gridelements": "dev-master"
 },
   "extra": {
