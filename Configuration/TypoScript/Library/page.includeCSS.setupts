@@ -10,7 +10,7 @@ page {
 	}
 }
 
-[globalVar = LIT:1 = {$themes.mode.isProduction}]
+[{$themes.mode.isProduction} == true]
 page {
 	includeCSS {
 		fontawesome = //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css
@@ -23,7 +23,7 @@ page {
 
 
 # Settings for Bootstrap Paypal Accessibility Plugin
-[globalVar = LIT:0 < {$themes.configuration.bootstrap.javascript.plugin.accessibility}]
+[{$themes.configuration.bootstrap.javascript.plugin.accessibility} > 0]
 	page {
 		includeCSS {
 			accessibility = EXT:theme_bootstrap/Resources/Public/Contrib/bootstrap-accessibility-plugin/bootstrap-accessibility.css

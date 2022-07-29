@@ -43,7 +43,7 @@ page {
 
 
 # Settings for the production system
-[globalVar = LIT:1 = {$themes.mode.isProduction}]
+[{$themes.mode.isProduction} == true]
 	page {
 		includeJSLibs {
 			modernizr = //cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js
@@ -62,7 +62,7 @@ page {
 
 
 # Settings for Bootstrap Paypal Accessibility Plugin
-[globalVar = LIT:0 < {$themes.configuration.bootstrap.javascript.plugin.accessibility}]
+[{$themes.configuration.bootstrap.javascript.plugin.accessibility} > 0]
 page {
 	includeJS {
 		accessibility = EXT:theme_bootstrap/Resources/Public/Contrib/bootstrap-accessibility-plugin/bootstrap-accessibility.min.js

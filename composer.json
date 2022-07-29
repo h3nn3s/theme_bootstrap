@@ -11,6 +11,9 @@
 "replace": {
 	"typo3-ter/theme_bootstrap": "self.version"
 },
+  "autoload": {
+    "psr-4": { "KayStrobach\\ThemeBootstrap\\": "Classes/"}
+  },
 "require": {
   "kaystrobach/dyncss-less": "dev-master",
 	"typo3-themes/themes-gridelements": "dev-master"
